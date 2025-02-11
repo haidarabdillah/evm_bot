@@ -6,6 +6,7 @@ const totalAccount= 10000
 let arraydata = [];
 
 for (let i = 0; i < totalAccount; i++) {
+  const account = web3.eth.accounts.create();
   const accountData = {
     address: account.address,
     privateKey: account.privateKey
